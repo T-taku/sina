@@ -1,0 +1,174 @@
+@import url('https://fonts.googleapis.com/earlyaccess/notosansjapanese.css');
+@import url('https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
+
+/*ヘッダー*/
+.menu,.menu-list{
+    list-style: none;
+    padding-left: 0;
+    margin: 0;
+  }
+  .menu-name{
+    list-style-type: none;
+    margin-right: 20px;
+    transition:all .3s;
+    color: #fff;
+    padding:10px;
+  }
+  .menu:after {
+    content: "";
+    clear: both;
+    display: block;
+  }
+  .menu{
+    background-color:#0099ff;
+    position: fixed;
+    height: 65px; /* 高さ */
+    width: 100%; /* 長さ */
+    top: 0; /* 固定する位置 */
+    left: 0; /* 固定する位置 */
+    right: 0;  /* 固定する位置 */ 
+    z-index: 99;
+}
+  .menu-case{
+    float: left;
+    text-decoration: none;
+    position: relative;
+  }
+  .menu-list {
+    position: absolute;
+    opacity: 0;
+    z-index: -1;
+    width: 160px;
+  }
+  .menu-name:hover + .menu-list, .menu-list:hover{
+    opacity: 1;
+    z-index: 1;
+  }
+  .menu-case:hover .menu-name{
+      color: #d5d5d5;
+  }
+  .menu-one{
+      background-color: #d5d5d5;
+      padding: 10px;
+      transition: all .2s;
+      opacity: 0.9;
+  }
+  .menu-one:hover{
+    background-color: #3799b2;
+    color: #fff;
+  }
+  .menu-link{
+    text-decoration: none;
+  }
+
+/*フッダー*/
+footer{
+    background-color: #3799b2;
+    color: #fff;
+    text-align: center;
+    padding:10px;
+  }
+  
+h1 {
+    /*線の種類（実線） 太さ 色*/
+    border-bottom: solid 3px black;
+  }
+h2 {
+    padding: 0.25em 0.5em;/*上下 左右の余白*/
+    color: #000000;/*文字色*/
+    background: transparent;/*背景透明に*/
+    border-left: solid 5px #00ccff;/*左線*/
+  }
+
+  table{
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  table tr{
+    border-bottom: solid 2px white;
+  }
+  
+  table tr:last-child{
+    border-bottom: none;
+  }
+  
+  table th{
+    position: relative;
+    text-align: left;
+    width: 30%;
+    background-color: #ff9900;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+  }
+  
+  table th:after{
+    display: block;
+    content: "";
+    width: 0px;
+    height: 0px;
+    position: absolute;
+    top:calc(50% - 10px);
+    right:-10px;
+    border-left: 10px solid #ff9900;
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+  }
+  
+  table td{
+    text-align: left;
+    width: 70%;
+    text-align: center;
+    background-color: #eee;
+    padding: 10px 0;
+  }
+  
+  .btn-circle-flat {
+    display: inline-block;
+    text-decoration: none;
+    background: #87befd;
+    color: #FFF;
+    width: 120px;
+    height: 120px;
+    line-height: 120px;
+    border-radius: 50%;
+    text-align: center;
+    vertical-align: middle;
+    overflow: hidden;
+    transition: .4s;
+  }
+
+  .btn-circle-flat {
+    display: inline-block;
+    text-decoration: none;
+    background: #87befd;
+    color: #FFF;
+    width: 120px;
+    height: 120px;
+    line-height: 120px;
+    border-radius: 50%;
+    text-align: center;
+    vertical-align: middle;
+    overflow: hidden;
+    transition: .4s;
+  }
+  
+  .btn-circle-flat:hover {
+    background: #668ad8;
+  }
+
+
+  .site-header{
+    background: rgba(255,255,255,0.5);
+    display: flex;
+    padding: 60px 20px;
+    position: fixed;
+    justify-content: space-between;
+    transition: .5s;
+    width: 100%;
+}
+.site-header.transform{
+    background: rgba(255,255,255,0.9);
+    padding: 20px;
+}
